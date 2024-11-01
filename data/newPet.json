@@ -1,0 +1,18 @@
+{
+    "id": 696969,
+    "category": {
+      "id": 0,
+      "name": "Panda"
+    },
+    "name": "Bamboo",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  }
