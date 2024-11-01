@@ -9,7 +9,7 @@ test("create & delete order", async({request})=>{
     })
     expect(createOrderResponse.status()).toBe(200)
     const createOrderJson = await createOrderResponse.json();
-    fs.writeFileSync("../PetStore-API/output/newPet.json", JSON.stringify(createOrderJson, null, 2))
+    //fs.writeFileSync("../PetStore-API/output/newPet.json", JSON.stringify(createOrderJson, null, 2))
     const orderID = await createOrderJson.id;
 //get
     let getOrderResponse = await request.get(`store/order/${orderID}`)

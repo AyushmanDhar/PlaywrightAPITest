@@ -15,7 +15,7 @@ test("create, update & delete data", async ({ request }) => {
 //get
     let getPet = await request.get(`pet/${petID}`)
     let getPetJson = await getPet.json();
-    fs.writeFileSync("../PetStore-API/output/newPet.json", JSON.stringify(getPetJson, null, 2))
+    //fs.writeFileSync("../PetStore-API/output/newPet.json", JSON.stringify(getPetJson, null, 2))
     console.log(`Before edit name: ${await newPetResponseJson.name}`)
 //update
     const renamePetResponse = await request.put("pet", {
@@ -25,7 +25,7 @@ test("create, update & delete data", async ({ request }) => {
 //get
     getPet = await request.get(`pet/${petID}`)
     getPetJson = await getPet.json();
-    fs.writeFileSync("../PetStore-API/output/updatedPet.json", JSON.stringify(getPetJson, null, 2))
+    //fs.writeFileSync("../../output/updatedPet.json", JSON.stringify(getPetJson, null, 2))
     console.log(`After edit name: ${await updatePetJson.name}`)
 //delete
     const deletePetResponse = await request.delete(`pet/${await getPetJson.id}`)

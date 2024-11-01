@@ -1,8 +1,18 @@
 {
-  "id": 4,
-  "petId": 24,
-  "quantity": 5,
-  "shipDate": "2024-11-01T17:18:15.728+0000",
-  "status": "placed",
-  "complete": true
+  "id": 696969,
+  "category": {
+    "id": 0,
+    "name": "Panda"
+  },
+  "name": "Bamboo",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
 }
